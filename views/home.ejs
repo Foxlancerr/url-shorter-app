@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Url-Shorter</title>
+  </head>
+  <style>
+    button {
+      background-color: blue;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+    input {
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h1>URL SHORTER</h1>
+
+    <form action="/url" method="post">
+      <label for="url_input">URL:</label>
+      <input
+        type="text"
+        placeholder="https//google.com"
+        id="url_input"
+        name="siteUrl"
+        required
+      />
+      <button type="submit">submit</button>
+    </form>
+    <hr />
+    <table border="1">
+      <thead>
+        <th>ID</th>
+        <th>OrignalURl</th>
+        <th>ShortURl</th>
+        <th>TotalRequest</th>
+      </thead>
+      <tbody>
+        
+        <%url.forEach((ele,id) => { %>
+        <tr>
+          <td><%= id + 1 %></td>
+          <td><%= ele.siteUrl %></td>
+          <td><%= ele.shortId %></td>
+          <td><%= ele.totalRequest.length %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+    <hr>
+    <a href="./login">LogIn</a>
+    <a href="./register">SignUp</a>
+  </body>
+</html>

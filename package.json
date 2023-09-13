@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "joi": "^13.1.0",
+    "mongoose": "^7.5.0",
+    "nodemon": "^3.0.1",
+    "shortid": "^2.2.16",
+    "url": "^0.11.1",
+    "uuid": "^9.0.1"
+  },
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Asimm/NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Asimm/NodeJS/issues"
+  },
+  "homepage": "https://github.com/M-Asimm/NodeJS#readme",
+  "description": ""
+}
